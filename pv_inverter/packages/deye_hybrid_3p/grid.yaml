@@ -68,6 +68,7 @@ sensor:
     address: 609
     unit_of_measurement: "Hz"
     device_class: frequency
+    state_class: "measurement"
     accuracy_decimals: 2
     filters:
       - multiply: 0.01
@@ -82,6 +83,7 @@ sensor:
     address: 598
     unit_of_measurement: "V"
     device_class: voltage
+    state_class: "measurement"
     accuracy_decimals: 1
     filters:
       - multiply: 0.1
@@ -96,6 +98,7 @@ sensor:
     address: 599
     unit_of_measurement: "V"
     device_class: voltage
+    state_class: "measurement"
     accuracy_decimals: 1
     filters:
       - multiply: 0.1
@@ -110,6 +113,7 @@ sensor:
     address: 600
     unit_of_measurement: "V"
     device_class: voltage
+    state_class: "measurement"
     accuracy_decimals: 1
     filters:
       - multiply: 0.1
@@ -123,6 +127,7 @@ sensor:
     address: 621
     unit_of_measurement: "%"
     device_class: power_factor
+    state_class: "measurement"
     accuracy_decimals: 1
     filters:
       - multiply: 0.001
@@ -293,6 +298,7 @@ sensor:
     address: 610
     unit_of_measurement: "A"
     device_class: current
+    state_class: "measurement"
     accuracy_decimals: 2
     filters:
       - multiply: 0.01
@@ -307,6 +313,7 @@ sensor:
     address: 611
     unit_of_measurement: "A"
     device_class: current
+    state_class: "measurement"
     accuracy_decimals: 2
     filters:
       - multiply: 0.01
@@ -321,6 +328,7 @@ sensor:
     address: 612
     unit_of_measurement: "A"
     device_class: current
+    state_class: "measurement"
     accuracy_decimals: 2
     filters:
       - multiply: 0.01
@@ -335,6 +343,7 @@ sensor:
     address: 613
     unit_of_measurement: "A"
     device_class: current
+    state_class: "measurement"
     accuracy_decimals: 2
     filters:
       - multiply: 0.01
@@ -349,6 +358,7 @@ sensor:
     address: 614
     unit_of_measurement: "A"
     device_class: current
+    state_class: "measurement"
     accuracy_decimals: 2
     filters:
       - multiply: 0.01
@@ -363,6 +373,7 @@ sensor:
     address: 615
     unit_of_measurement: "A"
     device_class: current
+    state_class: "measurement"
     accuracy_decimals: 2
     filters:
       - multiply: 0.01

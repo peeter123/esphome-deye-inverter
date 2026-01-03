@@ -20,6 +20,7 @@ sensor:
     address: 644
     unit_of_measurement: "V"
     device_class: voltage
+    state_class: "measurement"
     accuracy_decimals: 1
     filters:
       - multiply: 0.1
@@ -33,6 +34,7 @@ sensor:
     address: 645
     unit_of_measurement: "V"
     device_class: voltage
+    state_class: "measurement"
     accuracy_decimals: 1
     filters:
       - multiply: 0.1
@@ -46,6 +48,7 @@ sensor:
     address: 646
     unit_of_measurement: "V"
     device_class: voltage
+    state_class: "measurement"
     accuracy_decimals: 1
     filters:
       - multiply: 0.1
@@ -107,6 +110,7 @@ sensor:
     address: 655
     unit_of_measurement: "Hz"
     device_class: frequency
+    state_class: "measurement"
     accuracy_decimals: 2
     filters:
       - multiply: 0.01
