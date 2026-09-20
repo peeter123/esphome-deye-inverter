@@ -27,6 +27,9 @@ sensor:
       - multiply: 0.1
     value_type: U_WORD
     icon: "mdi:battery-charging"
+    on_value:
+      then:
+        - lambda: id(daily_battery_charge_updated) = millis();
 
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
@@ -42,6 +45,9 @@ sensor:
       - multiply: 0.1
     value_type: U_WORD
     icon: "mdi:battery-minus"
+    on_value:
+      then:
+        - lambda: id(daily_battery_discharge_updated) = millis();
 
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
@@ -140,6 +146,9 @@ sensor:
     accuracy_decimals: 0
     value_type: S_WORD
     icon: "mdi:lightning-bolt"
+    on_value:
+      then:
+        - lambda: id(battery_power_updated) = millis();
 
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
